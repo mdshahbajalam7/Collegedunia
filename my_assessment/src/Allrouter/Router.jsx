@@ -5,7 +5,7 @@ import Home from "../components/Home";
 const Router = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

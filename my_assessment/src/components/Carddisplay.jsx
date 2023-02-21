@@ -29,12 +29,11 @@ function Carddisplay({
   TotalCollege,
 }) {
   return (
-    <Card w={"90%"} maxW="lg">
-      <CardBody>
+    <Card w={"95%"} maxW="md" margin={'auto'}>
+      <CardBody w={"88%"} margin='auto'>
         <Box
-          w="100%"
-          h="300px"
-          bg="blue"
+          w="95%"
+          h="250px"
           bgImage={image}
           bgSize="cover"
           bgPos="50% 100%"
@@ -63,21 +62,21 @@ function Carddisplay({
             </Box>
           </Box>
           <Box display={"flex"} justifyContent="space-between">
-            <Box w={"20%"} h="100px" mt={"55%"} ml="10px">
-              <Image src={CollegeLogo} alt="college logo" />
+            <Box w={"20%"} h="100px" mt={"53%"} ml="10px" >
+              <Image borderRadius={5} src={CollegeLogo} alt="college logo" />
             </Box>
-            <Box ml={"10px"} mt={"55%"} color="yellow">
+            <Box ml={"10px"} mt={"50%"} color="yellow">
               {name}
             </Box>
           </Box>
-          <Box w="100%" ml={"25%"} marginTop="-8" display={"flex"} gap="10px">
+          <Box w="100%" ml={"25%"} marginTop="-14" display={"flex"} gap="10px">
             <GoLocation size={20} />
             <Text color={""}>{Location}</Text>
           </Box>
 
           <Box w="80%" mt="4" display={"flex"} justifyContent="space-between">
             <Box>
-              <Text color={"orange"}>{CourseFees}</Text>
+              <Text color={"orange"}>₹ {CourseFees}</Text>
               <Text>{Course}</Text>
             </Box>
             <Center height="60px" color={"gray"}>
@@ -108,7 +107,7 @@ function Carddisplay({
       <Box
         w={"80%"}
         margin="auto"
-        mt={"40%"}
+        mt={"45%"}
         h={"20px"}
         display="flex"
         color={"gray"}
